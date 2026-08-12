@@ -4,7 +4,7 @@ All image paths below are already wired into the prototype. Replace the placehol
 
 ## 1. Brand / navigation
 - `public/images/logos/srm/srm-university-logo.webp` — official SRM University Delhi-NCR logo, transparent PNG, high resolution, horizontal lockup.
-- `public/images/logos/srm/naac-a-plus-logo.webp` — official NAAC A+ badge/logo, transparent PNG.
+- `public/images/logos/srm/naac-a-plus-logo.png` — official NAAC A+ badge/logo, transparent PNG.
 
 ## 2. Hero
 - `public/images/hero/hero-student.webp` — transparent-background student/girl cutout for the right side of the hero. Prefer 1500px+ height, full body/3-quarter body, clean edges, no rectangular background.

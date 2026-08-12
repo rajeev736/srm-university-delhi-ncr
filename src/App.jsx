@@ -8,24 +8,24 @@ import {
 } from "lucide-react";
 
 const stats = [
-  ["70+", "Programmes offered"],
-  ["50+", "International & industry collaborations"],
-  ["47.89", "Acres of connected campus"],
-  ["AAAA+", "Careers360 North India rating"]
+  ["50,000+", "Students across SRMIST"],
+  ["170+", "International MoUs signed"],
+  ["₹130+ Cr", "External funding"],
+  ["#11", "NIRF University ranking 2025"]
 ];
 
 const schools = [
-  { title: "Engineering & Technology", image: "/images/academics/engineering.jpg", text: "Technology, engineering, computing and applied sciences." },
-  { title: "Management Studies", image: "/images/academics/management.jpg", text: "Business, finance, strategy and leadership." },
-  { title: "Law", image: "/images/academics/law.jpg", text: "Professional legal education with practical exposure." },
-  { title: "Science & Humanities", image: "/images/academics/science-humanities.jpg", text: "Research-led learning across science and humanities." }
+  { title: "Engineering & Technology", image: "/images/academics/engineering.jpg", text: "Research-led engineering education focused on innovation, design and technology." },
+  { title: "Management", image: "/images/academics/management.jpg", text: "Management education designed to develop capable, industry-ready professionals." },
+  { title: "Computer Applications", image: "/images/academics/law.jpg", text: "BCA, MCA, computer science and future-focused application programmes." },
+  { title: "Science & Humanities", image: "/images/academics/science-humanities.jpg", text: "Basic and applied sciences with a strong focus on education and research." }
 ];
 
 const placementStats = [
-  ["₹50 LPA", "Highest Package"],
-  ["925+", "Companies Visited"],
-  ["2,024+", "Jobs Placement"],
-  ["1,400+", "Paid Internships"]
+  ["₹60 LPA", "Highest Package"],
+  ["1,010+", "Recruitment Drives"],
+  ["9,670+", "Job Offers"],
+  ["7.3 LPA", "Average Package"]
 ];
 
 const recruiters = [
@@ -67,12 +67,12 @@ const recognitionCards = [
 ];
 
 const campusCards = [
-  { title: "Campus Overview", image: "/images/campus/campus-overview.png", text: "Explore a connected university environment with modern academic infrastructure, student facilities and spaces designed for learning and campus life." },
-  { title: "Library", image: "/images/campus/library.jpg", text: "A technology-enabled learning and research environment with digital resources, automated services, Wi-Fi and extensive academic collections." },
-  { title: "Sports & Recreation", image: "/images/campus/sports.png", text: "Spaces and facilities that support fitness, recreation, teamwork and an active student experience." },
-  { title: "Accommodation", image: "/images/campus/accommodation.jpg", text: "Student accommodation designed to support a comfortable, connected and secure campus lifestyle." },
-  { title: "Health Facilities", image: "/images/campus/healthcare.jpg", text: "Accessible health and wellness support for students and the wider university community." },
-  { title: "Transport", image: "/images/campus/transport.webp", text: "Campus transport support designed to connect students with the university and surrounding NCR region." }
+  { title: "Campus Overview", image: "/images/campus/campus-overview.png", text: "A 27.14-acre green campus with modern academic infrastructure, laboratories, hostels, AC classrooms and student facilities." },
+  { title: "Library", image: "/images/campus/library.jpg", text: "The Central Library houses more than 50,000 books, journals, magazines, digital content and online learning resources." },
+  { title: "Sports & Recreation", image: "/images/campus/sports.png", text: "Football, volleyball, badminton, basketball, tennis, cricket practice and indoor games support an active student life." },
+  { title: "Accommodation", image: "/images/campus/accommodation.jpg", text: "Separate hostel facilities for boys and girls, with AC and non-AC rooms, dining, Wi-Fi, recreation and round-the-clock security." },
+  { title: "Medical Facility", image: "/images/campus/healthcare.jpg", text: "On-campus medical support with medical staff and an ambulance available for student health and emergencies." },
+  { title: "Transport", image: "/images/campus/transport.webp", text: "AC and non-AC transport facilities connect students with Delhi and the wider NCR region." }
 ];
 
 const nav = [
@@ -144,9 +144,9 @@ function ImagePlaceholder({ src, alt, className = "", label = "Image placeholder
 function LogoLockup() {
   return (
     <div className="logo-lockup">
-      <img src="/images/logos/srm/srm-university-logo.webp" alt="SRM University Delhi-NCR" />
+      <img src="/images/logos/srm/srm-university-logo.webp" alt="SRM Institute of Science and Technology, Delhi-NCR Campus, Ghaziabad (U.P.)" />
       <span className="logo-divider" />
-      <img className="naac-logo" src="/images/logos/srm/naac-a-plus-logo.webp" alt="NAAC A+ accredited" />
+      <img className="naac-logo" src="/images/logos/srm/naac-a-plus-logo.png" alt="NAAC A++ accredited" />
     </div>
   );
 }
@@ -169,10 +169,10 @@ function RecruiterSlider() {
 
 function SocialLinks() {
   const links = [
-    [Instagram, "Instagram", "https://www.instagram.com/srmuniversitydelhincr/"],
-    [Facebook, "Facebook", "https://www.facebook.com/SRMUniversityDelhiNCR/"],
-    [Linkedin, "LinkedIn", "https://www.linkedin.com/company/srm-university-haryana/"],
-    [Youtube, "YouTube", "https://www.youtube.com/SRMUniversityDelhiNCR"]
+    [Instagram, "Instagram", "https://www.instagram.com/srmistup_official/"],
+    [Facebook, "Facebook", "https://www.facebook.com/srmup/"],
+    [Linkedin, "LinkedIn", "https://www.linkedin.com/company/srmistup/"],
+    [Youtube, "YouTube", "https://www.youtube.com/channel/UCrP6mKDz2wVmHTCH--A4G3A"]
   ];
   return (
     <div className="social-links" aria-label="Official social links">
@@ -269,7 +269,7 @@ export default function App() {
     <div className="site">
       <header className={`navbar ${scrolled ? "is-scrolled" : ""}`}>
         <div className="nav-inner">
-          <button className="brand" onClick={() => scrollTo("top")} aria-label="SRM University home"><LogoLockup /></button>
+          <button className="brand" onClick={() => scrollTo("top")} aria-label="SRM Institute of Science and Technology, Delhi-NCR Campus, Ghaziabad (U.P.) home"><LogoLockup /></button>
           <nav
             className={`nav-links ${mobile ? "mobile-open" : ""}`}
             onMouseLeave={() => !mobile && setOpenNav(null)}
@@ -315,7 +315,7 @@ export default function App() {
             <ImagePlaceholder src="/images/hero/hero-student.webp" alt="SRM student" className="hero-student" label="Hero student image" />
           </div>
           <div className="hero-content">
-            <div className="eyebrow"><span /> SRM UNIVERSITY DELHI-NCR • SONEPAT</div>
+            <div className="eyebrow"><span /> SRM INSTITUTE OF SCIENCE & TECHNOLOGY • DELHI-NCR CAMPUS • GHAZIABAD (U.P.)</div>
             <h1>Learn. <em>Lead.</em><br />Leap into the future.</h1>
             <p>A multidisciplinary university where ambitious students build knowledge, experience and careers through future-focused education.</p>
             <div className="hero-actions">
@@ -323,7 +323,7 @@ export default function App() {
               <button className="ghost-btn" onClick={() => scrollTo("experience")}><Play size={15} fill="currentColor" /> Discover SRM</button>
             </div>
           </div>
-          <div className="hero-bottom"><span>39, Rajiv Gandhi Education City, Sonepat</span><span>Admissions 2026–27 <b>Open</b></span></div>
+          <div className="hero-bottom"><span>Delhi-Meerut Road, Modinagar, Ghaziabad (U.P.) – 201204</span><span>Admissions 2026–27 <b>Open</b></span></div>
         </section>
 
         <section className="stats-strip section-with-graphic">
@@ -345,7 +345,7 @@ export default function App() {
           <Reveal><div className="section-kicker">THE SRM EXPERIENCE</div></Reveal>
           <div className="intro-grid">
             <Reveal><div><h2>Built for the<br /><span>world ahead.</span></h2></div></Reveal>
-            <Reveal delay={0.12}><div><p className="lead">SRM University Delhi-NCR brings together multidisciplinary learning, industry-aligned education and an intellectually diverse campus experience.</p><p>From engineering and technology to management, law, science and humanities, students learn in an environment designed to turn curiosity into capability.</p><button className="text-btn">Discover SRM <ArrowRight size={17} /></button></div></Reveal>
+            <Reveal delay={0.12}><div><p className="lead">SRM Institute of Science and Technology, Delhi-NCR Campus is a place for learning, discovery, innovation, expression and discourse.</p><p>The campus offers graduate, postgraduate and doctoral education across engineering, management, computer applications, pharmacy, hotel management, science and humanities.</p><button className="text-btn">Discover SRM <ArrowRight size={17} /></button></div></Reveal>
           </div>
         </section>
 
@@ -358,16 +358,16 @@ export default function App() {
                 <div className="card-orbit" />
                 <div className="know-title">Do you <span>know?</span></div>
                 <div className="know-stats">
-                  <div><strong>70+</strong><span>Programmes</span></div><div><strong>50+</strong><span>Collaborations</span></div>
-                  <div><strong>47.89</strong><span>Acres campus</span></div><div><strong>AAAA+</strong><span>North India rating</span></div>
-                  <div><strong>A+</strong><span>NAAC accredited</span></div><div><strong>1st</strong><span>IET academic affiliate in Haryana</span></div>
+                  <div><strong>50,000+</strong><span>Students</span></div><div><strong>20,512+</strong><span>Publications</span></div>
+                  <div><strong>170+</strong><span>International MoUs</span></div><div><strong>₹130+ Cr</strong><span>External funding</span></div>
+                  <div><strong>3,200+</strong><span>Faculties</span></div><div><strong>#11</strong><span>NIRF University ranking 2025</span></div>
                 </div>
               </Reveal>
               <Reveal delay={0.12} className="empower-panel">
                 <div className="panel-kicker">ACADEMICS THAT EMPOWER</div><h2>Knowledge with<br /><span>purpose.</span></h2>
                 <p>SRM combines a multidisciplinary academic ecosystem with industry exposure, research opportunities and global engagement.</p>
                 <div className="empower-points">
-                  {[["Global learning experience", "International collaborations and diverse academic exposure."], ["Industry-focused outcomes", "Industry-aligned programmes, practical exposure and career readiness."], ["Innovation & research", "Centres of Excellence, research projects, patents and innovation activity."], ["Trusted recognition", "NAAC A+, Careers360 AAAA+ and recognised professional affiliations."]].map(([title, text]) => <div key={title}><CheckCircle2 size={20} /><span><strong>{title}</strong><small>{text}</small></span></div>)}
+                  {[ ["Global learning experience", "170+ international MoUs and academic engagement beyond the classroom."], ["Industry-focused outcomes", "Industry-aligned programmes and placement support through the Career Development Centre."], ["Innovation & research", "Research, innovation and academic initiatives across a multidisciplinary ecosystem."], ["Trusted recognition", "NAAC A++, UGC Category-1, NIRF 2025 rank 11, AICTE and PCI approvals."] ].map(([title, text]) => <div key={title}><CheckCircle2 size={20} /><span><strong>{title}</strong><small>{text}</small></span></div>)}
                 </div>
               </Reveal>
             </div>
@@ -416,7 +416,7 @@ export default function App() {
             <Reveal><div className="section-kicker">CAREER OUTCOMES</div></Reveal>
             <Reveal className="placement-heading-centered">
               <h2>Trusted by top recruiters.<br /><span>Proven by our graduates.</span></h2>
-              <p>Every year, companies across technology, consulting, engineering, finance and other sectors visit the campus. Current official placement information reports 2,024+ jobs, 925+ companies, 1,400+ paid internships and a ₹50 LPA highest package.</p>
+              <p>Current official placement information reports 9,670+ job offers, 1,010 recruitment drives, a ₹60 LPA highest package and a ₹7.3 LPA average package. Recruiters include Microsoft, Deloitte, IBM, Infosys, JPMorgan, TCS, Visa, Twilio and many more.</p>
             </Reveal>
             <Reveal className="placement-stat-row">{placementStats.map(([value, label]) => {
               const clean = value.replace(/[^0-9.]/g, "");
@@ -457,17 +457,17 @@ export default function App() {
         </section>
 
         <section className="section enquiry" id="enquiry">
-          <div className="enquiry-card"><div><div className="section-kicker light">START YOUR JOURNEY</div><h2>See yourself<br />at SRM?</h2><p>Explore programmes, campus life and opportunities designed for the future.</p></div><form onSubmit={e => { e.preventDefault(); alert("Prototype enquiry submitted."); }}><input placeholder="Full name" required /><input type="email" placeholder="Email address" required /><input placeholder="Mobile number" required /><select defaultValue=""><option value="" disabled>Programme interested in</option><option>Engineering & Technology</option><option>Management Studies</option><option>Law</option><option>Science & Humanities</option></select><button className="primary-btn" type="submit">Submit enquiry <ArrowRight size={17} /></button></form></div>
+          <div className="enquiry-card"><div><div className="section-kicker light">START YOUR JOURNEY</div><h2>See yourself<br />at SRM?</h2><p>Explore programmes, campus life and opportunities designed for the future.</p></div><form onSubmit={e => { e.preventDefault(); alert("Prototype enquiry submitted."); }}><input placeholder="Full name" required /><input type="email" placeholder="Email address" required /><input placeholder="Mobile number" required /><select defaultValue=""><option value="" disabled>Programme interested in</option><option>Engineering & Technology</option><option>Management</option><option>Computer Applications</option><option>Science & Humanities</option><option>Pharmacy</option><option>Hotel Management</option></select><button className="primary-btn" type="submit">Submit enquiry <ArrowRight size={17} /></button></form></div>
         </section>
       </main>
 
       <footer className="footer">
         <div className="footer-top">
-          <div className="footer-brand"><LogoLockup /><p className="footer-address"><MapPin size={14} /> 39, Rajiv Gandhi Education City, Delhi-NCR, Sonepat-131029, Haryana</p><SocialLinks /><a className="footer-apply apply-btn" href="https://admissions.srmuniversity.ac.in" target="_blank" rel="noreferrer">Apply Now <ArrowRight size={15} /></a></div>
+          <div className="footer-brand"><LogoLockup /><p className="footer-title">Delhi-NCR Campus</p><p className="footer-title">The Dean</p><p className="footer-address"><MapPin size={14} /> SRM Institute of Science and Technology, Delhi-Meerut Road, Modinagar, Ghaziabad (U.P.) – 201204</p><p className="footer-address"><Phone size={14} /> Toll free: 1800 889 3496</p><p className="footer-address"><Mail size={14} /> dean.ncr@srmist.edu.in</p><p className="footer-title">The Director</p><p className="footer-address"><MapPin size={14} /> SRM Group New Delhi Administration Office, 21, Ring Rd, Lajpat Nagar 4, Lajpat Nagar, New Delhi, Delhi 110024</p><p className="footer-address"><Phone size={14} /> 01141676464</p><p className="footer-address"><Mail size={14} /> director.ncr@srmist.edu.in</p><SocialLinks /><a className="footer-apply apply-btn" href="https://admissions.srmuniversity.ac.in" target="_blank" rel="noreferrer">Apply Now <ArrowRight size={15} /></a></div>
           <div><h3 className="footer-title">Explore</h3><div className="footer-links"><a href="#experience">About SRM</a><a href="#academics">Academics</a><a href="#placements">Placements</a><a href="#campus-life">Campus Life</a><a href="#enquiry">Enquire Now</a></div></div>
-          <div><h3 className="footer-title">Admissions & Contact</h3><div className="footer-contact"><a href="https://admissions.srmuniversity.ac.in" target="_blank" rel="noreferrer"><ExternalLink size={14} /> Admissions 2026–27</a><a href="tel:+918816033301"><Phone size={14} /> +91-8816033301 / 02 / 03 / 04 / 05 / 06</a><a href="mailto:admissions@srmuniversity.ac.in"><Mail size={14} /> admissions@srmuniversity.ac.in</a><a href="https://www.srmuniversity.ac.in/contact-us" target="_blank" rel="noreferrer">Contact & regional offices <ArrowRight size={14} /></a></div></div>
+          <div><h3 className="footer-title">Admissions & Contact</h3><div className="footer-contact"><a href="https://www.srmist.edu.in/admissions/" target="_blank" rel="noreferrer"><ExternalLink size={14} /> Admissions 2026–27</a><a href="tel:18008893496"><Phone size={14} /> 1800 889 3496</a><a href="mailto:dean.ncr@srmist.edu.in"><Mail size={14} /> dean.ncr@srmist.edu.in</a><a href="https://www.srmup.in/contact-us" target="_blank" rel="noreferrer">Contact & campus information <ArrowRight size={14} /></a></div></div>
         </div>
-        <div className="footer-bottom"><span>© 2026 SRM University Delhi-NCR. Prototype.</span><span>Official website: srmuniversity.ac.in</span><span>Privacy • Terms • Accessibility</span></div>
+        <div className="footer-bottom"><span>© 2026 SRM Institute of Science and Technology, Delhi-NCR Campus. Prototype.</span><span>Official website: srmup.in</span><span>Privacy • Terms • Accessibility</span></div>
       </footer>
     </div>
   );
