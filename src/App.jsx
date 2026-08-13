@@ -312,7 +312,7 @@ export default function App() {
           <div className="hero-tech"><span /><span /><span /></div>
           <div className="hero-image-orbit" aria-hidden="true"><span /><span /><span /></div>
           <div className="hero-student-wrap">
-            <ImagePlaceholder src="/images/hero/hero-student.webp" alt="SRM student" className="hero-student" label="Hero student image" />
+            <ImagePlaceholder src="/images/hero/hero-student.png" alt="SRM student" className="hero-student" label="Hero student image" />
           </div>
           <div className="hero-content">
             <div className="eyebrow"><span /> SRM INSTITUTE OF SCIENCE & TECHNOLOGY • DELHI-NCR CAMPUS • GHAZIABAD (U.P.)</div>
